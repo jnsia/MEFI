@@ -1,0 +1,85 @@
+spring:
+
+  # database
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(e1dujsKzQqGovf+tg9WeUyg+O4iI5Fz1LRH812lqOZb9XtD7x4wg1XquFrjD4AbMkgt+Ex+1+v22leE+dj68jUDKu+/a6Qp5s4y/SCYUVPi9slbtMpGnr3YkN6kFtvFa8Gywo1rVCocg5YLJ85/qWA==)
+    username: ENC(STFAJLTBNjto5twxRhLYvg==)
+    password: ENC(WxXgJEw2DSZp2O2LvV3g0jsWmvKqhev9)
+
+  # jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Seoul
+        format_sql: true
+        show_sql: true;
+    open-in-view: false
+
+  # encoding
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+  # secret key
+  jwt:
+    secret: ENC(hkdBLsuDYACownjfWcONpecb1EL7rHUVHvh/DKNcnA4toirqhjWLeVlVnj5Jikw+hgyiNZmb5i5qIGDTKzju8g==)
+    filter: ENC(4n4C2GddJ5b20njYiAEE69Q0b1GsZli0)
+
+  # mail smtp
+  mail:
+    # 서버 주소
+    host: ENC(jbo5qLQB1u0g0tDxaHjhyz4DtyXt9cPv)
+    # 메일 인증 서버 포트 (587, 465 존재, SSL은 465)
+    port: 465
+    # 아이디
+    username: ENC(UDmYz6dgES3+0W8XTjLzrqdiRb4xBmBTMYN6hixMbNpGE+e4yYRcJQ==)
+    # 비밀번호
+    password: ENC(DgX/6xhu95VWtgqv/3RPhh16psw9zXdb)
+    properties:
+      # 메일 디버그 모드 설정 (전송 과정 로그 출력)
+      debug: true
+      mail:
+        smtp:
+          # SMTP 인증 활성화 (활성시 로그인 때 계정 정보 필요)
+          auth: true
+          ssl:
+            # SSL 보안 설정 (전송 과정 데이터 암호화 제공)
+            enable: true
+            # 신뢰할 수 있는 SMTP 서버 호스트 지정
+            trust: ENC(UWnTUhjXR9CLA7QeMPU7IlFRVzNpoFH4)
+          # STARTTLS 연결을 활성화 (평문 통신 채널에서 암호화 통신 채널로 업그레이드)
+          starttls.enable: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+# AWS S3
+cloud:
+  aws:
+    s3:
+      bucket: ENC(ERGwjpE29QUvgdCKrtT7DhjeTHMmsCV7)
+      credentials:
+        access-key: ENC(za+2tqUiVZwKNuBGyWME3FyLfzfRlAg9RuwhxN+Cku0=)
+        secret-key: ENC(EJfxTl5mm2MsvPfISoO2YubWYFjxao/25FGRjc7zeibt6JwvQZfD9O9+fQp4IqVvL6sda8px9S8=)
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false # EC2의 Spring Cloud 자동 구성 해제
+      
+# OPENVIDU
+OPENVIDU_URL: ENC(tr0z7Tmn2o8vvcLN93iQc2j4EE1EMZOi4IUsoXwL9HcKp6N1sB9VD/kX4AfuUw0v)
+OPENVIDU_SECRET: ENC(24+6uqrXC+CRv3uNOtSeM4OUV3jd6IH4dqlh6GbAais=)
+
+# logger로 Hibernate 실행 SQL 출력
+logging.level:
+  org.hibernate.SQL: debug  
+
+# PROFILE IMAGE
+DEFAULT_PROFILE_URL : ENC(Dp06UzclQawgo6UvSMClII7TqN2vwL/wZ6bf5It4nNreW8qGT31HyyH44JumXFcCAs6ZyFZjDRsiV/9q1pOibNk/N4ueEHTK6eSLJPPzpaXA4lIBQDmY2A==)

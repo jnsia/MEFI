@@ -1,0 +1,183 @@
+/* 대부분의 내부 내용은 vuetify의 커스터 마이징 혹은
+페이지 전처리(width, heith)용이므로 용도를 각 상단에
+주석으로 기입하면 좋음 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-size: 14px;
+  font-family: 'Pretendard-Regular';
+}
+
+/* 페이지 전체화면 처리 */
+html, body {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+
+/* 배경색 지정 */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-main{
+  background-color: #45566F;
+}
+
+.sidebar{
+  min-width: 250px;
+  max-width: 250px;
+}
+
+/* main 위치 이동... 기존 profile side가 너무 좁아서 늘리는 과정에서 파생됨. */
+.w-10 {
+  width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-95 {
+  width: 95% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-5 {
+  height: 5% !important;
+}
+
+.h-10 {
+  height: 10% !important;
+}
+
+.h-15 {
+  height: 15% !important;
+}
+
+.h-30 {
+  height: 30% !important;
+}
+
+.h-40 {
+  height: 40% !important;
+}
+
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-70 {
+  height: 70% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-85 {
+  height: 85% !important;
+}
+
+.h-90 {
+  height: 90% !important;
+}
+
+.h-95 {
+  height: 95% !important;
+}
+
+.h-cal-position {
+  position: absolute;
+  top: 40px;
+}
+
+.h-cal {
+  height: calc(100% - 40px) !important;
+}
+
+.v-main {
+  padding-left: 15% !important;
+}
+
+/* 글씨 색상 지정용 */
+.text-white {
+  color: #ffffff;
+}
+
+/* border 저장용 */
+.border-top {
+  border-top: 1px solid lightgray;
+}
+
+.border-bottom {
+  border-bottom: 1px solid lightgray;
+}
+
+.border-left {
+  border-left: 1px solid lightgray;
+}
+
+.border-right {
+  border-right: 1px solid lightgray;
+}
+
+.auto-scroll {
+  overflow-y: auto;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.CONFERENCE {
+  /* 회의 */
+  background-color: rgba(172, 175, 255, 0.55);
+  color: #2d2d2d;
+}
+.BUSINESSTRIP {
+  /* 출장 */
+  background-color: rgb(158, 202, 255, 0.55);
+  color: #2d2d2d;
+}
